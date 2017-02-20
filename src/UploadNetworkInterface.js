@@ -21,6 +21,9 @@ export class UploadNetworkInterface extends HTTPFetchNetworkInterface {
         if (request.variables[key] instanceof FileList) {
           return true
         }
+        if ((request.variables[key] instanceof Array) && (request.variables[key].length > 0)) {
+          return request.variables[key][0] instanceof File
+        }
       }
     }
     return false
