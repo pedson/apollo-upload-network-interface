@@ -47,8 +47,14 @@ export class UploadNetworkInterface extends HTTPFetchNetworkInterface {
 
     for (let key in request.variables) {
       let v = request.variables[key]
+      let list =  null;
       if (v instanceof FileList) {
-        Array.from(v).forEach(f => body.append(key, f))
+          list = Array.from(v);
+      } else if (v instanceof Array && (v.length > 0) && v[0] instanceof File) {
+          list = v;
+      }
+      if (list) {
+          list.forEach(f => body.append(key, f))
       } else {
         variables[key] = v
       }
