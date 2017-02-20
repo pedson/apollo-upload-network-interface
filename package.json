@@ -2,8 +2,8 @@
   "name": "apollo-upload-network-interface",
   "description": "UploadNetworkInterface for Apollo GraphQL Client",
   "main": "lib/index.js",
-  "module": "src/index.js",
-  "jsnext:main": "src/index.js",
+  "module": "lib/index.js",
+  "jsnext:main": "lib/index.js",
   "scripts": {
     "build": "babel src -d lib",
     "clean": "rimraf lib",
