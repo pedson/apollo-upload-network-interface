@@ -1,5 +1,6 @@
 {
   "name": "apollo-upload-network-interface",
+  "version": "1.0.0",
   "description": "UploadNetworkInterface for Apollo GraphQL Client",
   "main": "lib/index.js",
   "module": "lib/index.js",
