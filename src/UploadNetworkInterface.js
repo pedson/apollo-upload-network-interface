@@ -57,9 +57,10 @@ export class UploadNetworkInterface extends HTTPFetchNetworkInterface {
                 list = v;
             }
             if (list) {
+                variables[key] = [];
                 list.forEach((f, idx) => {
                     // body.append(key, f)
-                    variables[key] = null;
+                    variables[key].push(null)
                     map[fileCount++] = [`variables.${key}.${idx}`];
                     file.push(f);
                 });
