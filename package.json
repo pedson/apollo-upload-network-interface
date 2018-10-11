@@ -1,7 +1,7 @@
 {
-  "name": "apollo-upload-network-interface",
-  "version": "1.0.0",
-  "description": "UploadNetworkInterface for Apollo GraphQL Client",
+  "name": "apollo-upload-network-interface-alt",
+  "version": "1.0.5",
+  "description": "Modified UploadNetworkInterface for Apollo GraphQL Client",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "jsnext:main": "lib/index.js",
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/HriBB/apollo-upload-network-interface.git"
+    "url": "https://github.com/pedson/apollo-upload-network-interface.git"
   },
   "keywords": [
     "apollo",
@@ -29,11 +29,15 @@
     "interface"
   ],
   "author": "Bojan Hribernik",
+  "contributors": [{
+    "name": "Patrick Edson",
+    "email": "pedson@leapscientific.com"
+  }],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HriBB/apollo-upload-network-interface/issues"
+    "url": "https://github.com/pedson/apollo-upload-network-interface/issues"
   },
-  "homepage": "https://github.com/HriBB/apollo-upload-network-interface#readme",
+  "homepage": "https://github.com/pedson/apollo-upload-network-interface#readme",
   "devDependencies": {
     "babel-cli": "^6.22.2",
     "babel-core": "^6.22.1",
@@ -49,6 +53,6 @@
     "semantic-release": "^6.3.2"
   },
   "dependencies": {
-    "apollo-client": "^1.0.2"
+    "apollo-client": "^1.3.0"
   }
 }
